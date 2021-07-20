@@ -58,8 +58,8 @@ body{font-family: Inkfree, Georgia; font-size: 2.34375vw; color: #000; font-weig
 #content2{position: relative;}
 #content2 .bg , #content2 .bg div{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 #content2 .bg div{background: no-repeat center/cover;}
-#content2 .bg .bg1{background-image: url("/images/background1.jpg");}
-#content2 .bg .bg2{background-image: url("/images/background2.jpg");}
+#content2 .bg .bg1{background-image: url("../images/background1.jpg");}
+#content2 .bg .bg2{background-image: url("../images/background2.jpg");}
 #content2 .bg::after{content: ""; position: absolute; top: 0; width: 100%; left: 0; height: 100%; background: rgba(0, 0, 0, 0.6);}
 #content2 .cnt2_wrap{position: absolute; top: 5.7291vw; left: 0; height: calc(100vh - 5.7291vw); width: 100%; color: #fff;}
 #content2 .cnt2_wrap .cnt2_txt{display: flex; flex-direction: column; height: 100%; width: 70%; margin: 0 auto;}
