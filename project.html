@@ -15,7 +15,7 @@
   <div class="wrap">
     <div id="skip">
       <a href="#content">본문 바로가기</a>
-      
+
     </div>
     <header id="header">
       <div class="area d_f">
@@ -43,102 +43,39 @@
         </div>
       </div>
     </header>
-    <div id="container">
-      <section id="content1">
-        <div class="area d_f">
-          <h2 class="blind">main</h2>
-          <div class="txtwrap">
-            <p class="txt">안녕하세요. <br> 김민철이라고 합니다.</p>
+    <section id="content" aria-roledescription="carousel" aria-label="프로젝트 소개">
+      <div class="controls">
+        <!-- 이전과 다음 버튼 -->
+        <div class="prev_next">
+          <button type="button" aria-label="이전 슬라이드" aria-controls="visualItems" class="prev"><img
+              src="images/chevron-left-solid.svg" alt=""></button>
+          <button type="button" aria-label="다음 슬라이드" aria-controls="visualItems" class="next"><img
+              src="images/chevron-right-solid.svg" alt=""></button>
+        </div>
+      </div>
+      <div class="items" id="visualItems" aria-live="off">
+        <!-- 가로 100% -->
+        <div class="item_wrap">
+          <!-- 가로 너비 : 슬라이드 개수 x 하나의 크기 -->
+          <div role="tabpanel" aria-roledescription="slide" aria-label="2개의 슬라이드 중 1" id="item1" class="tabpanel">
+           <div class="tit_wrap">
+             <h2>KOGURYEO <br> COllege renewal</h2>
+             <div>
+               <p><span class="blind">구분 </span>TEAM PROJECT</p>
+               <p><span class="blind">제작일 </span>2021.05</p>
+             </div>
+           </div>
+           <p><span class="blind">설명 </span>팀 프로젝트로 고구려 대학교를 가상의 대학으로 취급하여<br>
+            리뉴얼 하였고 공지사항과 입학안내 페이지를 담당하였습니다.</p>
+            <div class="btn"><a href="https://kmc940303.github.io/project1/index.html" target="_blank">VIEW</a></div>
           </div>
-          <figure>
-            <img src="images/main.png" alt="">
-          </figure>
-        </div>
-      </section>
-      <section id="content2">
-        <h2 class="blind">project</h2>
-        <div class="bg">
-          <div class="bg1" data-id="1"></div>
-          <div class="bg2" data-id="2"></div>
-        </div>
-        <div class="cnt2_wrap">
-          <div class="cnt2_txt">
-            <div class="txt1 selected">
-              <div class="txt_inner">
-                <p class="title">
-                  <span>1.KOGURYEO</span>
-                  <span>COLLEGE renewal</span>
-                </p>
-                <p class="cate">TEAM PROJECT</p>
-              </div>
-            </div>
-            <div class="txt2">
-              <div class="txt_inner">
-                <p class="title">
-                  <span>2.ASUS</span>
-                  <span>renewal</span>
-                </p>
-                <p class="cate">RESPONSIVE-WEB</p>
-              </div>
-            </div>
+          <div role="tabpanel" aria-roledescription="slide" id="item2" aria-label="2개의 슬라이드 중 2" class="tabpanel">
+           
           </div>
-          <ul class="pagenation">
-            <li class="on"><button type="button" aria-label="고구려 대학교"></button></li>
-            <li><button type="button" aria-label="에이수스"></button></li>
-          </ul>
         </div>
-      </section>
-      <section id="content3">
-        <div class="area">
-          <h2 class="cnt_title">ABOUT</h2>
-          <ul>
-            <li>
-              <div class="wave_wrap">
-                <div class="water-effect">
-                  <div class="waves"></div>
-                  <div class="water"></div>
-                </div>
-              </div>
-              <p class="subject">HTML + CSS</p>
-              <p class="num">50%</p>
-            </li>
-            <li>
-              <div class="wave_wrap">
-                <div class="water-effect">
-                  <div class="waves"></div>
-                  <div class="water"></div>
-                </div>
-              </div>
-              <p class="subject">jQuery</p>
-              <p class="num"></p>
-            </li>
-            <li>
-              <div class="wave_wrap">
-                <div class="water-effect">
-                  <div class="waves"></div>
-                  <div class="water"></div>
-                </div>
-              </div>
-              <p class="subject">PHOTOSHOP</p>
-              <p class="num"></p>
-            </li>
-            <li>
-              <div class="wave_wrap">
-                <div class="water-effect">
-                  <div class="waves"></div>
-                  <div class="water"></div>
-                </div>
-              </div>
-              <p class="subject">Zeplin + Github</p>
-              <p class="num"></p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="content4">
-        <div class="area"></div>
-      </section>
-    </div>
+      </div>
+
+    </section>
   </div>
 </body>
 
