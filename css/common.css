@@ -75,13 +75,63 @@ body{font-family: Inkfree, Georgia; font-size: 2.34375vw; color: #000; font-weig
 #content2 .pagenation li.on button{background: #ffb23e;}
 
 /* cnt3 */
-#content3{position: relative; background: red;}
+#content3{position: relative; background: red; display: flex; align-items: center;}
 #content3 .area{height: 600px; background: blue;}
-#content3 .cnt_title{font-size: 3.125vw; background: yellow; color: #fff;}
-#content3 .cnt_title::after{content: ""; position: absolute; top: 8.5937vw; width:83.7%; left: 8.0729vw; height: 0.2083vw; border-bottom: 4px solid #fff;}
+#content3 .cnt_title{font-size: 3.125vw; color: #fff; line-height: 2; border-bottom: 0.2083vw solid #fff;}
 #content3 .area ul{display: flex; justify-content: center;}
-#content3 .area ul li{display: flex; align-items: flex-end; padding: 0 2.6041vw; height: 541px; background: silver;}
-#content3 .area ul li .wave{width: 0; height: 0; border: 50px solid transparent; border-bottom-color: #fff; position: relative; top:-300px;}
-#content3 .area ul li .wave::after{ content: ''; position: absolute; left: -50px; top: 50px; width: 0; height: 0; border: 50px solid transparent; border-top-color:#ffb23e;} 
+#content3 .area ul li{display: flex; flex-direction: column; align-items: center; height: 20.177vw; background: silver; width: 25%; text-align: center; justify-content: space-around; position: relative; padding: 4vw 0;}
+#content3 .area .num{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -200%);}
+
+.wave_wrap{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+
+.water-effect {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 130%;
+  animation: stretch 5s ease-in-out infinite;
+}
+
+.water-effect .waves {
+  height: 100px;
+  background-color: #03a9f4;
+  animation: waves 2s ease-in-out infinite;
+}
+
+.water-effect .water {
+  height: calc(100% - 100px);
+  margin-top: -1px;
+  background-color: #03a9f4;
+}
+
+@keyframes waves {
+  0%, 100% {
+    clip-path: polygon(0 8%, 7% 6%, 14% 5%, 21% 5%, 28% 6%, 34% 8%, 40% 12%, 46% 17%, 50% 20%, 54% 23%, 60% 25%, 66% 26%, 70% 26%, 77% 25%, 83% 23%, 89% 21%, 95% 19%, 100% 17%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 15%, 9% 21%, 14% 23%, 18% 25%, 21% 26%, 30% 28%, 32% 28%, 40% 27%, 46% 26%, 52% 23%, 57% 19%, 62% 15%, 68% 11%, 73% 8%, 79% 6%, 86% 5%, 93% 5%, 100% 6%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes stretch {
+  0% {
+    bottom: -130%;
+  }
+
+  100% {
+    bottom: -1px;
+  }
+}
+
+
 #content3 .area ul li .subject{color:#fff;}
 /* cnt4 */
