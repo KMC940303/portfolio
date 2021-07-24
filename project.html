@@ -8,7 +8,7 @@
   <title>프로젝트</title>
   <link rel="stylesheet" href="css/xeicon.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sub.css">
 </head>
 
 <body>
@@ -47,35 +47,83 @@
       <div class="controls">
         <!-- 이전과 다음 버튼 -->
         <div class="prev_next">
-          <button type="button" aria-label="이전 슬라이드" aria-controls="visualItems" class="prev"><img
-              src="images/chevron-left-solid.svg" alt=""></button>
-          <button type="button" aria-label="다음 슬라이드" aria-controls="visualItems" class="next"><img
-              src="images/chevron-right-solid.svg" alt=""></button>
+          <button type="button" aria-label="이전 슬라이드" aria-controls="visualItems" class="prev">
+            <i class="xi-angle-left"></i>
+          </button>
+          <button type="button" aria-label="다음 슬라이드" aria-controls="visualItems" class="next">
+            <i class="xi-angle-right"></i>
+          </button>
         </div>
       </div>
       <div class="items" id="visualItems" aria-live="off">
         <!-- 가로 100% -->
         <div class="item_wrap">
           <!-- 가로 너비 : 슬라이드 개수 x 하나의 크기 -->
-          <div role="tabpanel" aria-roledescription="slide" aria-label="2개의 슬라이드 중 1" id="item1" class="tabpanel">
-           <div class="tit_wrap">
-             <h2>KOGURYEO <br> COllege renewal</h2>
-             <div>
-               <p><span class="blind">구분 </span>TEAM PROJECT</p>
-               <p><span class="blind">제작일 </span>2021.05</p>
-             </div>
-           </div>
-           <p><span class="blind">설명 </span>팀 프로젝트로 고구려 대학교를 가상의 대학으로 취급하여<br>
-            리뉴얼 하였고 공지사항과 입학안내 페이지를 담당하였습니다.</p>
-            <div class="btn"><a href="https://kmc940303.github.io/project1/index.html" target="_blank">VIEW</a></div>
-          </div>
+          <d iv role="tabpanel" aria-roledescription="slide" aria-label="2개의 슬라이드 중 1" id="item1" class="tabpanel">
+            <div class="top">
+              <div class="tit_wrap">
+                <h2>KOGURYEO <br> COllege renewal</h2>
+                <div>            
+                  <p><span class="blind">구분 </span>TEAM PROJECT</p>
+                  <p><span class="blind">제작일 </span>2021.05</p>
+                </div>
+              </div>
+              <p><span class="blind">설명 </span>팀 프로젝트로 고구려 대학교를 가상의 대학으로 취급하여<br>
+                리뉴얼 하였고 공지사항과 입학안내 페이지를 담당하였습니다.</p>
+              <div class="btn">
+                <button type="button">
+                  <span class="blind">상세보기</span> <i class="xi-arrows-v"></i>
+                </button>
+              </div>
+            </div>
+            <div class="btm">
+              <figure>
+                <img src="images/koguryeo1.jpg" alt="">
+                <img src="images/koguryeo2.jpg" alt="">
+              </figure>
+              <h3 class="blind"></h3>
+              <ul>
+                <li>운용의 용이성 : '본문 바로가기'로 서브페이지를 들어갈 때마다 네비게이션을 또 들어가야 하는 불편함을 없애주었습니다.</li>
+                <li>인식의 용이성 : 배경과 글자색이 명도대비 4.5에 준하도록 글자의 밝기를 높였습니다.</li>
+              </ul>
+              <div class="btn"><a href="https://kmc940303.github.io/project1/index.html" target="_blank">VIEW</a></div>
+            </div>
+          </d>
           <div role="tabpanel" aria-roledescription="slide" id="item2" aria-label="2개의 슬라이드 중 2" class="tabpanel">
-           
+            <div class="top">
+              <div class="tit_wrap">
+                <h2>ASUS <br> renewal</h2>
+                <div>
+                  <p><span class="blind">구분 </span>RESPONSIVE-WEB</p>
+                  <p><span class="blind">제작일 </span>2021.06</p>
+                </div>
+              </div>
+              <p><span class="blind">설명 </span>개인 프로젝트로 에이수스 코리아의 웹사이트 메인페이지를<br>
+                반응형으로 리뉴얼해 보았습니다.</p>
+                <div class="btn">
+                  <button type="button">
+                    <span class="blind">상세보기</span> <i class="xi-arrows-v"></i>
+                  </button>
+                </div>
+            </div>
+            <div class="btm">
+              <figure>
+                <img src="images/asus1.jpg" alt="">
+                <img src="images/asus2.jpg" alt="">
+              </figure>
+              <h3 class="blind"></h3>
+              <ul>
+                <li>운용의 용이성 : '본문 바로가기'로 서브페이지를 들어갈 때마다 네비게이션을 또 들어가야 하는 불편함을 없애주었습니다.</li>
+                <li>인식의 용이성 : 배경과 글자색이 명도대비 4.5에 준하도록 글자의 밝기를 높였습니다.</li>
+              </ul>
+              <div class="btn"><a href="https://kmc940303.github.io/project2/index.html" target="_blank">VIEW</a></div>
+            </div>
           </div>
         </div>
       </div>
+  </div>
 
-    </section>
+  </section>
   </div>
 </body>
 
