@@ -9,17 +9,54 @@
   <link rel="stylesheet" href="css/xeicon.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/sub.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      let current = 0;
+      $('.controls .prev').addClass('disabled').attr({tabIndex: -1});
+      $('.controls button').on('click', function () {
+        if ($('.item_wrap').is(':animated')) return false;
+
+        const btnNum = $(this).index();
+        if (btnNum === 0) { // 이전
+          if (current === 1){
+            $('html, body').stop().animate({scrollTop: 0}, 'fast', function () {
+              $('.item_wrap').stop().animate({marginLeft: 0});
+            });
+            current--;
+            $('.controls .prev').addClass('disabled').attr({tabIndex: -1}).siblings().removeClass('disabled').removeAttr('tabIndex');
+            console.log(current);
+          }
+        } else { //다음
+          if (current === 0){
+            $('html, body').stop().animate({scrollTop: 0}, 'fast', function () {
+              $('.item_wrap').stop().animate({marginLeft: '-100%'});
+            });
+            current++;
+            $('.controls .next').addClass('disabled').attr({tabIndex: -1}).siblings().removeClass('disabled').removeAttr('tabIndex');
+            console.log(current);
+          }
+        }
+      });
+
+      $('#content .top .btn button').on('click', function () {
+        const pos = $('.btm').offset().top;
+        $('html, body').stop().animate({scrollTop: pos});
+      });
+    });
+  </script>
 </head>
 
 <body>
+  <div id="skip">
+    <a href="#content">본문 바로가기</a>
+  </div>
   <div class="wrap">
-    <div id="skip">
-      <a href="#content">본문 바로가기</a>
-
-    </div>
     <header id="header">
       <div class="area d_f">
-        <h1 class="logo">KIM MIN CHOEL</h1>
+        <h1 class="logo">
+          <a href="index.html">KIM MIN CHOEL</a>
+        </h1>
         <div class="nav">
           <button class="btn_open" type="button">
             <span class="blind">메뉴창 열기</span>
@@ -59,7 +96,7 @@
         <!-- 가로 100% -->
         <div class="item_wrap">
           <!-- 가로 너비 : 슬라이드 개수 x 하나의 크기 -->
-          <d iv role="tabpanel" aria-roledescription="slide" aria-label="2개의 슬라이드 중 1" id="item1" class="tabpanel">
+          <div role="group" aria-roledescription="slide" aria-label="2개의 슬라이드 중 1" id="item1" class="slide">
             <div class="top">
               <div class="tit_wrap">
                 <h2>KOGURYEO <br> COllege renewal</h2>
@@ -88,8 +125,8 @@
               </ul>
               <div class="btn"><a href="https://kmc940303.github.io/project1/index.html" target="_blank">VIEW</a></div>
             </div>
-          </d>
-          <div role="tabpanel" aria-roledescription="slide" id="item2" aria-label="2개의 슬라이드 중 2" class="tabpanel">
+          </div>
+          <div role="group" aria-roledescription="slide" id="item2" aria-label="2개의 슬라이드 중 2" class="slide">
             <div class="top">
               <div class="tit_wrap">
                 <h2>ASUS <br> renewal</h2>
