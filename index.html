@@ -13,7 +13,9 @@
   <script src="js/script.js"></script>
   <script src="js/common.js"></script>
   <script src="js/main.js"></script>
+
 </head>
+
 <body>
   <div id="skip">
     <a href="#content">본문 바로가기</a>
@@ -34,10 +36,11 @@
           <nav id="gnb">
             <p class="blind">메뉴</p>
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PROJECT</a></li>
-              <li><a href="#">SKILLS</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#content1">HOME</a></li>
+              <li><a href="#content2">PROJECT</a></li>
+              <li><a href="#content3">SKILLS</a></li>
+              <li><a href="#content4">SKILLS Explanation</a></li>
+              <li><a href="#content5">Web Accessibility</a></li>
             </ul>
             <button class="btn_close" type="button">
               <span class="blind">닫기</span>
@@ -75,7 +78,7 @@
             </div>
             <div class="txt2">
               <div class="txt_inner">
-                <a href="project.html">
+                <a href="project.html?category=#item2">
                   <p class="title">
                     <span>2.ASUS</span>
                     <span>renewal</span>
@@ -95,55 +98,57 @@
         <h2 class="blind">skills</h2>
         <div class="chartBarsWrap">
           <div class="chartBars chartBars1">
-              <ul class="numbers">
-                  <li><span>100%</span></li>
-                  <li><span>80%</span></li>
-                  <li><span>60%</span></li>
-                  <li><span>40%</span></li>
-                  <li><span>20%</span></li>
-                  <li><span>0%</span></li>
-              </ul>
-              <ul class="bars">
-                  <li>
-                      <span class="tooltip"> 
-                      <span class="tooltipContent">계속 발전중입니다.</span>
-                      <div data-percentage="70" class="bar greenBar trigger"></div>
-                      </span>
-                      <b>HTML + CSS</b>
-                  </li>
-                  <li>
-                      <span class="tooltip">  
-                      <span class="tooltipContent">어렵지만 발전중입니다.</span>
-                      <div data-percentage="50" class="bar blueBar trigger"></div>
-                      </span> 
-                      <b>JavaScript + jQuery</b>
-                  </li>
-                  <li>
-                      <span class="tooltip"> 
-                      <span class="tooltipContent">서툴지만 발전중입니다.</span>
-                      <div data-percentage="50" class="bar orangeBar trigger"></div>
-                      </span>
-                      <b>Photoshop + XD</b>
-                  </li>
-                  <li>
-                      <span class="tooltip"> 
-                      <span class="tooltipContent">계속 발전중입니다.</span> 
-                      <div data-percentage="70" class="bar purpleBar trigger"></div>    
-                      </span>
-                      <b>Zeplin + github</b>   
-                  </li>
-              </ul>
+            <ul class="numbers">
+              <li><span>100%</span></li>
+              <li><span>80%</span></li>
+              <li><span>60%</span></li>
+              <li><span>40%</span></li>
+              <li><span>20%</span></li>
+              <li><span>0%</span></li>
+            </ul>
+            <ul class="bars">
+              <li>
+                <span class="tooltip">
+                  <span class="tooltipContent">계속 발전중입니다.</span>
+                  <div data-percentage="70" class="bar greenBar trigger"></div>
+                </span>
+                <b>HTML + CSS</b>
+              </li>
+              <li>
+                <span class="tooltip">
+                  <span class="tooltipContent">어렵지만 발전중입니다.</span>
+                  <div data-percentage="50" class="bar blueBar trigger"></div>
+                </span>
+                <b>JavaScript + jQuery</b>
+              </li>
+              <li>
+                <span class="tooltip">
+                  <span class="tooltipContent">서툴지만 발전중입니다.</span>
+                  <div data-percentage="50" class="bar orangeBar trigger"></div>
+                </span>
+                <b>Photoshop + XD</b>
+              </li>
+              <li>
+                <span class="tooltip">
+                  <span class="tooltipContent">계속 발전중입니다.</span>
+                  <div data-percentage="70" class="bar purpleBar trigger"></div>
+                </span>
+                <b>Zeplin + github</b>
+              </li>
+            </ul>
           </div>
-      </div>
+        </div>
       </section>
       <section id="content4">
+        <h2 class="blind">skill설명</h2>
         <div class="area">
           <div class="has-animation animation-ltr" data-delay="50">
             <p class="bigger">HTML</p>
           </div>
           <br>
           <div class="has-animation animation-rtl" data-delay="500">
-            <p class="text">웹표준과 웹접근성을 준수한 마크업을 할수 있으며 깔끔한 코드 정리를 합니다.<br> 최근 HTML5 시멘틱 태그를 용도에 맞게 사용하며 크로스 브라우징에 대해 이해하고 있습니다.</p>
+            <p class="text">웹표준과 웹접근성을 준수한 마크업을 할수 있으며 깔끔한 코드 정리를 합니다.<br> 최근 HTML5 시멘틱 태그를 용도에 맞게 사용하며 크로스 브라우징에 대해
+              이해하고 있습니다.</p>
           </div>
           <br>
           <div class="has-animation animation-ltr" data-delay="50">
@@ -151,23 +156,92 @@
           </div>
           <br>
           <div class="has-animation animation-rtl" data-delay="500">
-            <p class="text">CSS의 각종 속성을 적절하게 사용하며 IR기법 등 최신의 트렌드를 항상 주의깊게 지켜보고 있습니다.<br> 트랜지션과 트랜스폼, 키프레임을 이용해 간단한 애니메이션을 만들 수 있습니다.</p>
+            <p class="text">CSS의 각종 속성을 적절하게 사용하며 IR기법 등 최신의 트렌드를 항상 주의깊게 지켜보고 있습니다.<br> 트랜지션과 트랜스폼, 키프레임을 이용해 간단한
+              애니메이션을 만들 수 있습니다.</p>
           </div>
           <br>
           <div class="has-animation animation-ltr" data-delay="50">
-            <p class="bigger">javsScript + jQuery</p>
+            <p class="bigger">javaScript + jQuery</p>
           </div>
           <br>
           <div class="has-animation animation-rtl" data-delay="500">
-            <p class="text">슬라이드나 갤러리와 같은 플러그인의 옵션을 잘 활용하고 디자인에 맞게 적용 할 수 있습니다.<br> 탭메뉴나 레이어팝업과 같은 페이지를 구성할때 자주쓰이는 것들을 스크립트를 사용하여 구현합니다.</p>
+            <p class="text">슬라이드나 갤러리와 같은 플러그인의 옵션을 잘 활용하고 디자인에 맞게 적용 할 수 있습니다.<br> 탭메뉴나 레이어팝업과 같은 페이지를 구성할때 자주쓰이는 것들을
+              스크립트를 사용하여 구현합니다.</p>
           </div>
           <br>
           <div class="has-animation animation-rtl" data-delay="500">
-            <p class="bigger">END ☺</p>
+            <p class="bigger">PHOTOSHOP + XD, 그 외</p>
+            <p class="text">간단한 디자인 및 필요한 중요 기능을 활용할 수 있습니다.</p>
           </div>
         </div>
-      </section>
     </div>
+    </section>
+    <section id="content5">
+      <h2 class="blind">웹 접근성</h2>
+      <div class="accordion" id="faq">
+        <h3 class="tit">
+          <button type="button" aria-controls="acdnPanel1" id="acdnHeader1" class="header first">
+            <span>인식의 용이성</span>
+          </button>
+        </h3>
+        <div role="region" aria-labelledby="acdnHeader1" id="acdnPanel1" class="panel">
+          <div>
+            <span class="blind">답변</span>
+            <h4>(대체 텍스트) 텍스트 아닌 콘텐츠에는 대체 텍스트를 제공해야 한다.</h4>
+            <p>에이수스 프로젝트 모바일 헤더 부분 이미지 로고에 alt 속성으로 대체 텍스트를 삽입한 모습</p>
+            <img src="../project3/images/Weba1.JPG" alt="에이수스 프로젝트로 예시1">
+            <img src="../project3/images/Weba2.JPG" alt="에이수스 프로젝트로 예시2">
+          </div>
+        </div>
+        <h3 class="tit">
+          <button type="button" aria-controls="acdnPanel2" id="acdnHeader2" class="header">
+            <span>운용의 용이성</span>
+          </button>
+        </h3>
+        <div role="region" aria-labelledby="acdnHeader2" id="acdnPanel2" class="panel">
+          <div>
+            <h4>(키보드 접근성) 콘텐츠는 키보드로 접근할 수 있어야 한다.</h4>
+            <p>에이수스 프로젝트에서 키보드 탭버튼과 방향키로 제어하는 모습</p>
+            <img src="../project3/images/Weba3.JPG" alt="에이수스 프로젝트로 예시3">
+            <img src="../project3/images/Weba4.JPG" alt="에이수스 프로젝트로 예시4">
+           
+          </div>
+        </div>
+        <h3 class="tit">
+          <button type="button" aria-controls="acdnPanel3" id="acdnHeader3" class="header last">
+            <span>이해의 용이성</span>
+          </button>
+        </h3>
+        <div role="region" aria-labelledby="acdnHeader3" id="acdnPanel3" class="panel">
+          <div>
+            <h4>콘텐츠는 읽고 이해하기 쉬워야 한다.</h4>
+            <p>에이수스 프로젝트 footer 부분. 얼핏봐도 가독성이 굉장히 뛰어나다.</p>
+            <img src="../project3/images/Weba5.JPG" alt="에이수스 프로젝트로 예시5">
+          </div>
+        </div>
+        <h3 class="tit">
+          <button type="button" aria-controls="acdnPanel3" id="acdnHeader3" class="header last">
+            <span>견고성</span>
+          </button>
+        </h3>
+        <div role="region" aria-labelledby="acdnHeader3" id="acdnPanel3" class="panel">
+          <div>
+            <h4>웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</h4>
+            <p>고구려 대학교 리뉴얼 프로젝트를 마크업 분석한 결과</p>
+            <img src="../project3/images/Weba6.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content6">
+      <footer class="footer">
+        <p>귀중한 시간 투자해서 끝까지 봐주신 점 진심으로 감사드립니다.</p>
+        <p>아직 많이 부족하지만 계속 발전해 나가는 김민철이 되겠습니다.</p>
+        <p class="copy">Copyright© 2021 KIMMINCHEOL All Rights Reserved.</p>
+      </footer>
+    </section>
+
+  </div>
   </div>
 </body>
 
