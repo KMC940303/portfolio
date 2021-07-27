@@ -176,5 +176,5 @@ body{font-family: Inkfree, "KCC-eunyoung"; font-size: 2.34375vw; color: #ffb23e;
 .accordion .header::after{content: "";position: absolute;right: 30px;top: 50%;transform: translateY(-50%);width: 16px;height: 9px;background: url("/images/ico.png") no-repeat 0 0;}
 .accordion .header.on::after{background-position: -16px 0;}
 .accordion .panel{visibility: hidden;max-height: 0;overflow: hidden;transition: all 0.5s;}
-.accordion .panel.on{visibility: visible;max-height: 300px;}
+.accordion .panel.on{visibility: visible; max-height: 611px;}
 .accordion .panel > div{padding: 0 1.82291vw; background: #30303A; font-size: 25px; text-align: left;}
