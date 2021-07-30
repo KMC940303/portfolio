@@ -182,6 +182,10 @@ body{font-family: Inkfree, "KCC-eunyoung"; font-size: 2.34375vw; color: #ffb23e;
 .accordion .panel > div p{padding: 3.0416vw; font-size: 1.8229vw;}
 
 /* cnt6 */
+<<<<<<< Updated upstream
 #content6{background: #30303A; height:200px;}
+=======
+#content6{background: #30303A; height:255px;}
+>>>>>>> Stashed changes
 #content6 .footer{width: 600px; margin: 0 auto; padding: 4.125vw 0; font-size: 1.0416vw; text-align: center;}
 #content6 .footer .copy{font-size: 0.885416vw; padding: 1.0416vw;}
