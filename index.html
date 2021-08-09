@@ -178,7 +178,7 @@
     </section>
     <section id="content5">
       <h2 class="blind">웹 접근성</h2>
-      <div class="accordion" id="faq">
+      <div class="accordion">
         <h3 class="tit">
           <button type="button" aria-controls="acdnPanel1" id="acdnHeader1" class="header first">
             <span>인식의 용이성</span>
@@ -186,11 +186,12 @@
         </h3>
         <div role="region" aria-labelledby="acdnHeader1" id="acdnPanel1" class="panel">
           <div>
-            <span class="blind">답변</span>
-            <h4>(대체 텍스트) 텍스트 아닌 콘텐츠에는 대체 텍스트를 제공해야 한다.</h4>
-            <p>에이수스 프로젝트 모바일 헤더 부분 이미지 로고에 alt 속성으로 대체 텍스트를 삽입한 모습</p>
-            <img src="images/Weba1.JPG" alt="에이수스 프로젝트로 예시1">
-            <img src="images/Weba2.JPG" alt="에이수스 프로젝트로 예시2">
+            <h4>1.1 적절한 대체 텍스트 제공 : 텍스트 아닌 콘텐츠에는 대체 텍스트를 제공해야 한다.</h4>
+            <p>에이수스 프로젝트 헤더 로고 이미지에 alt 속성으로 대체 텍스트를 삽입</p>
+            <div class="img_wrap">
+              <img src="images/a11y11.jpg" alt="에이수스 헤더 로고 화면">
+              <img src="images/a11y12.jpg" alt="에이수스 img 태그에 alt속성 지원">
+            </div>
           </div>
         </div>
         <h3 class="tit">
@@ -200,11 +201,12 @@
         </h3>
         <div role="region" aria-labelledby="acdnHeader2" id="acdnPanel2" class="panel">
           <div>
-            <h4>(키보드 접근성) 콘텐츠는 키보드로 접근할 수 있어야 한다.</h4>
-            <p>에이수스 프로젝트에서 키보드 탭버튼과 방향키로 제어하는 모습</p>
-            <img src="images/Weba3.JPG" alt="에이수스 프로젝트로 예시3">
-            <img src="images/Weba4.JPG" alt="에이수스 프로젝트로 예시4">
-           
+            <h4>2.1 입력장치 접근성 : 콘텐츠는 키보드로 접근할 수 있어야 한다.</h4>
+            <p>에이수스 프로젝트에서 role='tab'과 네비게이션에서 키보드 탭버튼과 방향키로 제어</p>
+            <div class="img_wrap">
+              <img src="images/a11y21.jpg" alt="에이수스 role='tab'에 포커스 진입">
+              <img src="images/a11y22.png" alt="에이수스 모바일 네비게이션 포커스 진입">
+            </div>
           </div>
         </div>
         <h3 class="tit">
@@ -214,9 +216,11 @@
         </h3>
         <div role="region" aria-labelledby="acdnHeader3" id="acdnPanel3" class="panel">
           <div>
-            <h4>콘텐츠는 읽고 이해하기 쉬워야 한다.</h4>
-            <p>에이수스 프로젝트 footer 부분. 얼핏봐도 가독성이 굉장히 뛰어나다.</p>
-            <img src="images/Weba5.JPG" alt="에이수스 프로젝트로 예시5">
+            <h4>3.1 가독성 : 콘텐츠는 읽고 이해하기 쉬워야 한다.</h4>
+            <p>에이수스 프로젝트에서 주로 사용하는 언어를 명시해 콘텐츠를 이해하기 쉽게 제어</p>
+            <div class="img_wrap">
+              <img src="images/a11y31.jpg" alt="에이수스 &lt;html lang=&quot;ko&quot;&gt;">
+            </div>
           </div>
         </div>
         <h3 class="tit">
@@ -226,23 +230,22 @@
         </h3>
         <div role="region" aria-labelledby="acdnHeader3" id="acdnPanel3" class="panel">
           <div>
-            <h4>웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</h4>
+            <h4>4.1 문법 준수 : 웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</h4>
             <p>고구려 대학교 리뉴얼 프로젝트를 마크업 분석한 결과</p>
-            <img src="images/Weba6.JPG" alt="">
+            <div class="img_wrap">
+              <img src="images/a11y41.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="content6">
-      <footer class="footer">
-        <p>귀중한 시간 투자해서 끝까지 봐주신 점 진심으로 감사드립니다.</p>
-        <p>아직 많이 부족하지만 계속 발전해 나가는 김민철이 되겠습니다.</p>
-        <p class="copy">Copyright© 2021 KIMMINCHEOL All Rights Reserved.</p>
-      </footer>
-    </section>
-
   </div>
+
+  <footer id="footer">
+    <p>귀중한 시간 투자해서 끝까지 봐주신 점 진심으로 감사드립니다.</p>
+    <p>아직 많이 부족하지만 계속 발전해 나가는 김민철이 되겠습니다.</p>
+    <p class="copy">Copyright© 2021 KIMMINCHEOL All Rights Reserved.</p>
+  </footer>
   </div>
 </body>
-
 </html>
